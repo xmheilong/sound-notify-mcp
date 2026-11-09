@@ -10,6 +10,7 @@
   - `list_sounds`：按语言列出内置音效，返回本地化名称、别名、真实文件名与路径，支持 `query` 过滤。
   - `play_sound`：播放提示音。支持 `sound`（中文名 / 英文名 / 别名 / 原文件名）、`intent`（按语义选音）、`file`（显式 `.wav` 路径）与 `lang`（用户语言）。
 - **分层语言推断**：显式 `lang` → 客户端 `_meta` locale → 环境变量 → IDE 配置 → 操作系统语言 → `en`。
+- **自带用法说明**：`initialize` 返回标准 `instructions` 字段，客户端若支持会直接注入模型上下文，Agent 不用额外交代就知道什么时候该调用。
 - 长音频自动裁剪到 2s；音效缺失时用 Node 合成一段「叮~咚」兜底音，任何系统都能响。
 - Windows 用 PowerShell + .NET `SoundPlayer`，macOS 用 `afplay`，Linux 依次尝试 `aplay` / `paplay` / `ffplay`。
 
