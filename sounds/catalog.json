@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "defaults": {
+    "zh": "notify",
+    "en": "notify"
+  },
+  "intents": {
+    "success": "notify",
+    "error": "eerie",
+    "alert": "notify",
+    "playful": "joker",
+    "calm": "ludic"
+  },
+  "sounds": [
+    {
+      "id": "notify",
+      "file": "625753__teh_bucket__onoff-sounds-with-variation.wav",
+      "labels": {
+        "zh": {
+          "name": "开关提示音",
+          "aliases": ["提示音", "默认", "任务完成", "完成", "通知", "开关"]
+        },
+        "en": {
+          "name": "On/Off Notification",
+          "aliases": ["default", "notify", "done", "task complete", "onoff"]
+        }
+      }
+    },
+    {
+      "id": "ludic",
+      "file": "276614__mickleness__ludic.wav",
+      "labels": {
+        "zh": {
+          "name": "轻快俏皮音",
+          "aliases": ["轻快", "俏皮", "短提示"]
+        },
+        "en": {
+          "name": "Playful Blip",
+          "aliases": ["ludic", "short", "blip"]
+        }
+      }
+    },
+    {
+      "id": "eerie",
+      "file": "527662__iwanplays__eerie-bell-loop.wav",
+      "labels": {
+        "zh": {
+          "name": "诡异铃音",
+          "aliases": ["铃音", "警告", "异常", "失败"]
+        },
+        "en": {
+          "name": "Eerie Bell",
+          "aliases": ["eerie", "bell", "warning", "error"]
+        }
+      }
+    },
+    {
+      "id": "joker",
+      "file": "658005__lilmati__laughing-joker-01-remastered-inner-demon-04.wav",
+      "labels": {
+        "zh": {
+          "name": "小丑笑声",
+          "aliases": ["笑声", "搞怪"]
+        },
+        "en": {
+          "name": "Joker Laugh",
+          "aliases": ["joker", "laugh", "fun"]
+        }
+      }
+    },
+    {
+      "id": "scifi",
+      "file": "819348__harrisonlace__uimisc_onboard-computer-starfighter-computer-idle.wav",
+      "labels": {
+        "zh": {
+          "name": "科幻电脑待机音",
+          "aliases": ["科幻", "电脑", "待机"]
+        },
+        "en": {
+          "name": "Sci-Fi Computer Idle",
+          "aliases": ["computer", "scifi", "idle"]
+        }
+      }
+    }
+  ]
+}

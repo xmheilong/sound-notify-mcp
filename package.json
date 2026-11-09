@@ -1,0 +1,41 @@
+{
+  "name": "sound-notify-mcp",
+  "version": "1.1.0",
+  "description": "Hear when your AI agent finishes: a one-command MCP server that plays a notification sound on task completion or failure. Built-in CC0 sounds, localized zh/en names, Windows / macOS / Linux, no network access.",
+  "type": "module",
+  "bin": {
+    "sound-notify-mcp": "server.mjs"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "selftest": "node tools/selftest.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "sounds",
+    "tools"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "sound",
+    "notification",
+    "task-complete",
+    "codebuddy",
+    "workbuddy",
+    "cross-platform"
+  ],
+  "author": "xmheilong",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmheilong/sound-notify-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xmheilong/sound-notify-mcp/issues"
+  },
+  "homepage": "https://github.com/xmheilong/sound-notify-mcp#readme"
+}

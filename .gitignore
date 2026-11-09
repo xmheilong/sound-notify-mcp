@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+dist/
+.cache/
+test-output/
+test-results/
+playwright-report/
+.npm/
+
+# 通用
+.workbuddy/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.env
+.env.*
+!.env.example
+
